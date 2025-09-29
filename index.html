@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FlowBoard — Team Kanban</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>FlowBoard</h1>
+    <div class="controls">
+      <input id="search" placeholder="Search cards or assignee..." aria-label="Search cards">
+      <button id="addCardBtn">+ Add Card</button>
+    </div>
+  </header>
+
+  <main class="board" id="board" aria-live="polite">
+    <!-- columns injected by JS -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <h2 id="modalTitle">Add Card</h2>
+      <label>Title <input id="cardTitle"></label>
+      <label>Description <textarea id="cardDesc"></textarea></label>
+      <label>Assignee <input id="cardAssignee"></label>
+      <div class="modal-actions">
+        <button id="saveCard">Save</button>
+        <button id="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <template id="column-template">
+    <section class="column" draggable="false">
+      <h3 class="col-title"></h3>
+      <div class="col-list" aria-label="Column list"></div>
+    </section>
+  </template>
+
+  <script src="src/js/app.js" defer></script>
+</body>
+</html>
