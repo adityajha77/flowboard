@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⏳ Event Countdown Timer</h1>
+    <p>Never miss an important date again!</p>
+  </header>
+
+  <main>
+    <!-- Event Form -->
+    <section class="event-form">
+      <h2>Add New Event</h2>
+      <input type="text" id="eventName" placeholder="Event Name" required>
+      <input type="datetime-local" id="eventDate" required>
+      <button onclick="addEvent()">Add Event</button>
+    </section>
+
+    <!-- Event List -->
+    <section class="event-list">
+      <h2>Upcoming Events</h2>
+      <ul id="eventsContainer"></ul>
+    </section>
+  </main>
+
+  <!-- Reminder sound -->
+  <audio id="reminderSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #e63946;
+}
+
+header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.event-form {
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.event-form input, .event-form button {
+  margin: 8px 0;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.event-form button {
+  background: #e63946;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.event-form button:hover {
+  background: #d62828;
+}
+
+.event-list {
+  margin-top: 30px;
+}
+
+.event-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 450px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.event-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.countdown {
+  font-size: 1rem;
+  color: #1d3557;
+  margin-top: 5px;
+}
